@@ -10,15 +10,15 @@ const orders = [
 
 // Get the total price of all orders
 const totalOrdersPrice = orders.map(order => order.price).reduce((acc, curr) => {
-  return acc += curr
+  return acc + curr
 }, 0)
-// console.log(totalOrdersPrice);
+console.log(totalOrdersPrice);
 
 // Get the total price of only delivered orders
 const deliveredOrderPrice = orders.filter(order => order.delivered).map(order => order.price).reduce((acc, cur) => {
-  return acc += cur;
+  return acc + cur;
 }, 0)
-// console.log(deliveredOrderPrice);
+console.log(deliveredOrderPrice);
 
 // Count how many orders are undelivered
 const undeliveredOrders = orders.filter(order => !order.delivered)
