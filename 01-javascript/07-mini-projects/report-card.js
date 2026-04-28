@@ -21,7 +21,7 @@ const studentsWithGrade = students.map((student) => {
   }
 })
 
-// console.log(studentsWithGrade);
+console.log(studentsWithGrade);
 
 // Get only passing students (marks above 40)
 // --- below solution is not valid, casue here I have used the map() - What map does? -- It returns the transformed array of same length, Cant filter out the elements thats in output we got undefined as well cause it ran for every elemetnt of the array and the last student has marks below 40 so cond. get false and it retured the undefined
