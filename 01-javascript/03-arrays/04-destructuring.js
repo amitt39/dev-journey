@@ -44,7 +44,6 @@ function average(...scores) {
   return average
 }
 
-
 console.log(average(46, 59, 20))
 console.log(average(46, 59))
 console.log(average(46))
