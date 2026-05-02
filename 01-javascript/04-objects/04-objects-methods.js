@@ -33,8 +33,6 @@ console.log(totalObj);
 
 
 // Find all properties whose value is a string using Object.entries and filter
-const strValues = Object.entries(product).filter(([key, value]) => {
+Object.entries(product).filter(([key, value]) => {
   return typeof value == "string"
-}).map(([key, , value]) => key)
-
-console.log(strValues);
+}).forEach(([key, value]) => console.log(key))
