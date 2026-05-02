@@ -8,22 +8,22 @@ function createStudent(name, marks) {
     marks,
     getGrade: function () {
       if (this.marks > 75) {
-        console.log("A");
-
+        return "A"
       } else if (this.marks > 55) {
-        console.log("B");
+        return "B"
       }
       else {
-        console.log("C");
+        return "C"
       }
     },
     introduce: function () {
-      console.log(`I am ${this.name}, I scored ${this.marks} and my grade is ${this.getGrade}`);
+      console.log(`I am ${this.name}, I scored ${this.marks} and my grade is ${this.getGrade()}`);
+      return this
     }
   }
 }
 
 // Create three students and call both methods on each.
-createStudent("Amit", 90);
-createStudent("abc", 76);
-createStudent("xyz", 34);
+createStudent("Amit", 90).introduce();
+createStudent("abc", 69).introduce();
+createStudent("xyz", 34).introduce();
