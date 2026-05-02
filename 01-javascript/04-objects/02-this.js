@@ -9,6 +9,8 @@ const bankAccount = {
 // deposit(amount) — adds amount to balance, prints "Deposited ₹500. New balance: ₹10500"
 bankAccount.deposit = function (amount) {
   this.balance += amount;
+  console.log(`Deposited ₹${amount}. New balance: ₹${this.balance}`);
+
   return this;
 }
 // withdraw(amount) — deducts amount, prints "Withdrawn ₹2000. New balance: ₹8500". If balance is insufficient print "Insufficient balance"
