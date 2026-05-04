@@ -39,7 +39,6 @@ class BankAccount {
 }
 
 
-
 const account = new BankAccount("Amit", 10000);
 account.deposit(5000);
 account.withdraw(3000);
