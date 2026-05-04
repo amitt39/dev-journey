@@ -3,6 +3,7 @@
 const titleEl = document.querySelector('#title');
 const parasEl = document.querySelectorAll(".description");
 const btnEl = document.querySelector("#btn");
+const listContainerEl = document.querySelectorAll('#list');
 const ulEl = document.querySelectorAll('#list li');
 const inputEl = document.querySelector("input");
 const firstDescPara = document.querySelector(".description");
