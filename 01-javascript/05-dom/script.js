@@ -24,4 +24,23 @@ ulEl[1].textContent = "Updated Item"
 const inputEl = document.querySelector("input");
 inputEl.placeholder = "Enter you name..."
 
-// Open index.html in browser after each change and verify it worked.
+// Add the highlight class to the h1
+titleEl.classList.add("highlight");
+
+// Toggle the hidden class on the first .description paragraph — run it twice and see what happens
+const firstDescPara = document.querySelector(".description");
+firstDescPara.classList.toggle("hidden")
+firstDescPara.classList.toggle("hidden")
+
+// Change the button's type attribute to "submit"
+btnEl.setAttribute("type", "submit")
+
+// Add a data-level attribute to the h1 with value "beginner"
+titleEl.setAttribute("data-level", "beginner");
+
+// Read that data-level back using both getAttribute and dataset and print both to console
+const dataLevelUsingGetAttr = titleEl.getAttribute("data-level")
+console.log(dataLevelUsingGetAttr);
+
+const dataLevelUsingDataset = titleEl.dataset.level;
+console.log(dataLevelUsingDataset);
