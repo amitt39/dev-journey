@@ -1,5 +1,5 @@
 function Footer() {
-  return <p>Made by Amit</p>;
+  return <h2>Made by Amit</h2>;
 }
 
 export default Footer;
