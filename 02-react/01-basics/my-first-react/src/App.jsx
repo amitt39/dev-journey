@@ -1,15 +1,5 @@
-function Header() {
-  return (
-    <>
-      <h1>Hello, Amit!</h1>
-      <p>My firse react app</p>
-    </>
-  );
-}
-
-function Footer() {
-  return <p>Made by Amit</p>;
-}
+import Footer from "./Footer";
+import Header from "./Header";
 
 function App() {
   return (
