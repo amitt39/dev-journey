@@ -1,10 +1,10 @@
-function Header() {
+function Header({ name }) {
   return (
     <>
-      <h1>Hello, Amit!</h1>
+      <h1>Hello, {name}!</h1>
       <p>My firse react app</p>
     </>
   );
 }
 
-export default Header
+export default Header;
