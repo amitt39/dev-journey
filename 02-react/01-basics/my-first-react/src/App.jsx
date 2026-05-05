@@ -4,7 +4,7 @@ import Header from "./Header";
 function App() {
   return (
     <>
-      <Header name="Amit" />
+      <Header name="Amit" city="Ahmedabad" />
       <Footer />
     </>
   );

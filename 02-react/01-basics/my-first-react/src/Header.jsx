@@ -1,7 +1,9 @@
-function Header({ name }) {
+function Header({ name, city }) {
   return (
     <>
-      <h1>Hello, {name}!</h1>
+      <h1>
+        Hello, {name} from {city}
+      </h1>
       <p>My firse react app</p>
     </>
   );
