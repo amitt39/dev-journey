@@ -7,14 +7,14 @@ function Counter() {
       <p>{count}</p>
       <button
         onClick={() => {
-          setCount(count + 1);
+          setCount((prev) => prev + 1);
         }}
       >
         Increse
       </button>
       <button
         onClick={() => {
-          setCount(count - 1);
+          setCount((prev) => prev - 1);
         }}
       >
         Decrease
