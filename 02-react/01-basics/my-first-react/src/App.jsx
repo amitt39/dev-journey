@@ -6,19 +6,20 @@ import SearchBar from "./SearchBar";
 import TaskList from "./TaskList";
 import Timer from "./Timer";
 import UserProfile from "./UserProfile";
+import InputLogger from "./state/InputLogger";
 import StopWatch from "./state/StopWatch";
-
 function App() {
   return (
     <>
       <Header name="Amit" city="Ahmedabad" />
-      <Counter />
-      <UserProfile />
-      <TaskList />
-      <Timer />
-      <SearchBar />
-      <AutoFocus />
+      <InputLogger />
       <StopWatch />
+      <AutoFocus />
+      <SearchBar />
+      <Timer />
+      <TaskList />
+      <UserProfile />
+      <Counter />
       <Footer />
     </>
   );
