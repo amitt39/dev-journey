@@ -8,10 +8,12 @@ import Timer from "./Timer";
 import UserProfile from "./UserProfile";
 import InputLogger from "./state/InputLogger";
 import StopWatch from "./state/StopWatch";
+import ExpensiveCalc from "./hooks/ExpensiveCalc";
 function App() {
   return (
     <>
       <Header name="Amit" city="Ahmedabad" />
+      <ExpensiveCalc />
       <InputLogger />
       <StopWatch />
       <AutoFocus />

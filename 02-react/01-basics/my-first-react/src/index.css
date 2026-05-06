@@ -64,6 +64,9 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 h1,
