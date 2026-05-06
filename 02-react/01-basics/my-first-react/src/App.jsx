@@ -6,6 +6,7 @@ import SearchBar from "./SearchBar";
 import TaskList from "./TaskList";
 import Timer from "./Timer";
 import UserProfile from "./UserProfile";
+import StopWatch from "./state/StopWatch";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Timer />
       <SearchBar />
       <AutoFocus />
+      <StopWatch />
       <Footer />
     </>
   );
