@@ -2,6 +2,7 @@ import Counter from "./Counter";
 import Footer from "./Footer";
 import Header from "./Header";
 import TaskList from "./TaskList";
+import Timer from "./Timer";
 import UserProfile from "./UserProfile";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Counter />
       <UserProfile />
       <TaskList />
+      <Timer />
       <Footer />
     </>
   );
