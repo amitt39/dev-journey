@@ -1,3 +1,4 @@
+import AutoFocus from "./AutoFocus";
 import Counter from "./Counter";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -15,6 +16,7 @@ function App() {
       <TaskList />
       <Timer />
       <SearchBar />
+      <AutoFocus />
       <Footer />
     </>
   );
