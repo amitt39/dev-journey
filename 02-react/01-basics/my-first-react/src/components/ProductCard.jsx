@@ -1,4 +1,6 @@
-function ProductCard({ name, price, inStock }) {
+import PropTypes from "prop-types";
+
+function ProductCard({ name, price = 0, inStock = false }) {
   return (
     <>
       <h4>Product Name: {name}</h4>
@@ -9,5 +11,11 @@ function ProductCard({ name, price, inStock }) {
     </>
   );
 }
+
+ProductCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number,
+  inStock: PropTypes.bool,
+};
 
 export default ProductCard;

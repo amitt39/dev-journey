@@ -16,9 +16,10 @@ function App() {
   return (
     <>
       <Header name="Amit" city="Ahmedabad" />
-      <ProductCard name={"iPhone 17"} price={69000} inStock={true} />
+      <ProductCard price={69000} inStock={true} />
       <ProductCard name={"Macbook M4"} price={125000} inStock={true} />
       <ProductCard name={"Airpods"} price={25000} inStock={false} />
+      <ProductCard name={"Apple Watch"} />
       <ThemeSwitcher />
       <CallbackDemo />
       <ExpensiveCalc />
