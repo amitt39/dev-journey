@@ -7,6 +7,7 @@ import SearchBar from "./SearchBar";
 import TaskList from "./TaskList";
 import Timer from "./Timer";
 import UserProfile from "./UserProfile";
+import LoginForm from "./components/LoginForm";
 import Navbar from "./components/Navbar";
 import ProductCard from "./components/ProductCard";
 import CallbackDemo from "./hooks/CallbackDemo";
@@ -22,6 +23,7 @@ function App() {
     <>
       <Header name="Amit" city="Ahmedabad" />
       <Navbar />
+      <LoginForm />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
