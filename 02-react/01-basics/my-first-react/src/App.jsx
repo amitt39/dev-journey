@@ -18,10 +18,12 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import InputLogger from "./state/InputLogger";
 import StopWatch from "./state/StopWatch";
+import CounterUseReduce from "./hooks/CounterUseReduce";
 function App() {
   return (
     <>
       <Header name="Amit" city="Ahmedabad" />
+      <CounterUseReduce />
       <Navbar />
       <LoginForm />
       <Routes>
