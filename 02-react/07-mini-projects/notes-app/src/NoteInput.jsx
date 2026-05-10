@@ -27,10 +27,12 @@ function NoteInput({ dispatch }) {
       <button
         className="note-button"
         onClick={() => {
-          const title = titleRef.current.value;
-          const content = contentRef.current.value;
+          let title = titleRef.current.value;
+          let content = contentRef.current.value;
 
           dispatch({ type: "add-note", title: title, content: content });
+          titleRef.current.value = "";
+          contentRef.current.value = "";
         }}
       >
         Add Note

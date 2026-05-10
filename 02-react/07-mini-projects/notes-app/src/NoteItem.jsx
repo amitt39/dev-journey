@@ -4,8 +4,6 @@ import { useRef, useState } from "react";
 
 function NoteItem({ note, dispatch }) {
   const [isEditing, setIsEditing] = useState(false);
-  const [editedTitle, setEditedTitle] = useState(note.title);
-  const [editedContent, setEditedContent] = useState(note.content);
   const titleInputRef = useRef();
   const contentInputRef = useRef();
   return (
@@ -18,11 +16,11 @@ function NoteItem({ note, dispatch }) {
                 <input
                   ref={titleInputRef}
                   type="text"
-                  defaultValue={editedTitle}
+                  defaultValue={note.title}
                 />
               </div>
             ) : (
-              editedTitle
+              note.title
             )}
           </h4>
           <p className="note-content">
@@ -30,10 +28,10 @@ function NoteItem({ note, dispatch }) {
               <input
                 ref={contentInputRef}
                 type="text"
-                defaultValue={editedContent}
+                defaultValue={note.content}
               />
             ) : (
-              editedContent
+              note.content
             )}
           </p>
         </div>
@@ -44,8 +42,8 @@ function NoteItem({ note, dispatch }) {
                 dispatch({
                   type: "edit-note",
                   id: note.id,
-                  title: setEditedTitle(titleInputRef.current.value),
-                  content: setEditedContent(contentInputRef.current.value),
+                  title: titleInputRef.current.value,
+                  content: contentInputRef.current.value,
                 });
                 setIsEditing(false);
               }}
