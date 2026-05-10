@@ -10,6 +10,7 @@ function SearchBar({ notes, setSearchText }) {
         "No notes added yet!"
       ) : (
         <input
+          className="search-input"
           ref={inputRef}
           type="text"
           name="search"

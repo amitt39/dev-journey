@@ -9,11 +9,12 @@ function NoteItem({ note, dispatch }) {
   return (
     <>
       <div className="note-card">
-        <div>
-          <h4>
+        <div className="note-card-body">
+          <h4 className="note-title">
             {isEditing ? (
-              <div>
+              <div className="edit-field-wrap">
                 <input
+                  className="edit-input"
                   ref={titleInputRef}
                   type="text"
                   defaultValue={note.title}
@@ -26,6 +27,7 @@ function NoteItem({ note, dispatch }) {
           <p className="note-content">
             {isEditing ? (
               <input
+                className="edit-input"
                 ref={contentInputRef}
                 type="text"
                 defaultValue={note.content}
@@ -35,9 +37,10 @@ function NoteItem({ note, dispatch }) {
             )}
           </p>
         </div>
-        <div>
+        <div className="note-actions">
           {isEditing ? (
             <button
+              className="action-button"
               onClick={() => {
                 dispatch({
                   type: "edit-note",
@@ -52,6 +55,7 @@ function NoteItem({ note, dispatch }) {
             </button>
           ) : (
             <button
+              className="action-button"
               onClick={() => {
                 setIsEditing(true);
               }}
@@ -61,6 +65,7 @@ function NoteItem({ note, dispatch }) {
           )}
 
           <button
+            className="action-button action-button-danger"
             onClick={() => {
               dispatch({ type: "delete-note", id: note.id });
             }}
